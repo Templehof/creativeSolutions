@@ -1,0 +1,24 @@
+.contact-section {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-right-radius: 50%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 40%;
+}
+
+.contact-text span {
+    color: var(--pink);
+}
+
+.contact-text a {
+    color: var(--pink);
+}

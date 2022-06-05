@@ -1,0 +1,9 @@
+.working-area-section {
+    border: 1px solid green;
+    width: 70%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
