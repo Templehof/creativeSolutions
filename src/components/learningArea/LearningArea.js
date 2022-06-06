@@ -10,17 +10,21 @@ const LearningArea = () => {
             Welcome to the creative tools learning area
           </h1>
           <h2 className="content-subtitle">
-            Below you can find guidance on how to use our tool bundle
-            effectively
+            Below you can find a theoretical guidance on how to use our tool bundle
           </h2>
           <p className="content-text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Our tool bundle cosists of two pieces. The first one is the planning
+            for value creation model. It was created by Ivan Riumkin, Maria
+            Bengtsson and Herman Stål at Umeå University. Its goal is to help
+            you plan and reflect on activities you perform and what values they
+            create for you. Apart from economic value it takes into account
+            other types of values that are especially important for creative
+            professionals. These values are Social, Cultural, And Symbolic. The
+            second piece is the Creative bBusiness Model Canvas. It is a
+            slightly adapted version developed by Michelle Carter, and Chris
+            Carter in their 2020 article. It draws on the original Business
+            Model Canvas by Alexander Osterwalder but takes into account the
+            peculiarities of culture and creative industries.
           </p>
         </div>
       </div>

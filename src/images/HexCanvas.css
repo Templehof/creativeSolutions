@@ -1,4 +1,14 @@
 .hex-canvas{
     width: 50rem;
-    border: 2px solid yellowgreen;
+    padding: 1rem;
+}
+
+.hex-canvas path:hover{
+    fill: var(--darkBlue);
+}
+
+.hex-canvas path{
+    fill: var(--white);
+    stroke: #121212;
+    transition: all .5s ease-in-out;
 }

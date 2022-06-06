@@ -1,0 +1,14 @@
+.working-area-section {
+    width: 70%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.working-area-container{
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    display: flex;
+    align-items: center;
+}

@@ -19,7 +19,7 @@
   height: fit-content;
   border-top: 1px solid var(--pink);
   border-bottom: 1px solid var(--pink);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 
   display: flex;
   align-items: flex-start;
@@ -38,5 +38,5 @@
   text-decoration: none;
   padding: 1rem;
   width: 100%;
-  transition: all 1s ease-in-out;
+  transition: all 0.8 ease-in-out;
 }
