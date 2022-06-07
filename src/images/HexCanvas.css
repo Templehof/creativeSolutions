@@ -11,4 +11,5 @@
     fill: var(--white);
     stroke: #121212;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 }

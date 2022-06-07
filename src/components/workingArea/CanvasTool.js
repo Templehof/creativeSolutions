@@ -1,10 +1,11 @@
 import React from "react";
+import "./canvasTool.css"
 
 import HexCanvas from "../../images/HexCanvas";
 
-const CanvasTool = () => {
+const CanvasTool = (props) => {
   return (
-    <div className="canvas-container">
+    <div className="canvas-container" onClick={props.handleClick} >
       <HexCanvas />
     </div>
   );

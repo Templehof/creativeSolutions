@@ -1,5 +1,5 @@
 import React from "react";
-import "./HexCanvas.css"
+import "./HexCanvas.css";
 
 function HexCanvas() {
   return (
@@ -9,51 +9,61 @@ function HexCanvas() {
       className="hex-canvas"
     >
       <path
+        id="partners"
         fill="#d8d8d8"
         stroke="#000"
         d="M49.999 100l49.999 25v50l-49.999 25L0 175v-50z"
       ></path>
       <path
+        id="activities"
         fill="#d8d8d8"
         stroke="#000"
         d="M150 100l49.999 25v50L150 200l-49.999-25v-50z"
       ></path>
       <path
+        id="resources"
         fill="#d8d8d8"
         stroke="#000"
         d="M100.63 183.93l49.999 25v50l-49.999 25-49.999-25v-50z"
       ></path>
       <path
+        id="audience"
         fill="#d8d8d8"
         stroke="#000"
         d="M450 100l49.999 25v50L450 200l-49.999-25v-50z"
       ></path>
       <path
+        id="communication"
         fill="#d8d8d8"
         stroke="#000"
         d="M350 100l49.999 25v50L350 200l-49.999-25v-50z"
       ></path>
       <path
+        id="channels"
         fill="#d8d8d8"
         stroke="#000"
         d="M399.94 186.8l49.999 25v50l-49.999 25-49.999-25v-50z"
       ></path>
       <path
+        id="identity"
         fill="#d8d8d8"
         stroke="#000"
         d="M250 218.94l49.999 25v50l-49.999 25-49.999-25v-50z"
       ></path>
       <path
+        id="products"
         fill="#d8d8d8"
         stroke="#000"
         d="M199.37 300l49.999 25v50l-49.999 25-49.999-25v-50z"
       ></path>
       <path
+        id="services"
         fill="#d8d8d8"
         stroke="#000"
         d="M300.63 300l49.999 25v50l-49.999 25-49.999-25v-50z"
       ></path>
       <path
+        id="bottom-line"
         fill="#d8d8d8"
         stroke="#000"
         d="M250 382.2l49.999 25v50L250 482.2l-49.999-25v-50z"
