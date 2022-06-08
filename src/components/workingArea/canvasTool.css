@@ -1,0 +1,15 @@
+.canvas-container {
+  width: 90%;
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .canvas-container {
+    width: 30%;
+  }
+}

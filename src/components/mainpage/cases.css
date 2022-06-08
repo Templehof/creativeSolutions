@@ -1,24 +1,37 @@
 .cases-section {
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
-
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  border-top-right-radius: 30%;
 }
 
 .cases-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
-.cases-content{
+.cases-content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .cases-section {
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+  }
+
+  .cases-content {
     width: 70%;
     height: 70%;
     display: grid;
     grid-template-columns: 45% 45%;
     align-items: center;
     gap: 3rem;
+  }
 }
-

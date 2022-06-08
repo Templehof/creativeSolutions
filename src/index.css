@@ -24,14 +24,14 @@ h3 {
 .page-section {
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content-container {
+  padding-top: 2rem;
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
-  padding-left: 12rem;
 }
 
 .content-title {
@@ -46,11 +46,38 @@ h3 {
   font-size: 1.5rem;
   border-bottom: 2px solid var(--pink);
   letter-spacing: 1px;
-  width: 70%;
 }
 
 .content-text {
   color: var(--darkBlue);
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 0.5rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: 2px solid var(--pink);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  z-index: 99;
+}
+
+.menu-btn:hover {
+  background-color: var(--pink);
+}
+
+@media print {
+  .menu-btn {
+    display: none !important;
+  }
 }

@@ -36,16 +36,24 @@ const WorkingArea = () => {
 
   return (
     <section className="page-section working-area-section">
-      <Link
-        className="pdf-area-button"
-        to="/print"
-        target={"_blank"}
-        rel="noreferrer noopener"
-      >
-        Preview
-      </Link>
-      <div className="clear-button" onClick={clearCanvas}>
-        Clear all fields{" "}
+      <div className="working-area-navs">
+        <Link
+          className="pdf-area-button"
+          to="/print"
+          target={"_blank"}
+          rel="noreferrer noopener"
+        >
+          Preview
+        </Link>
+        <div
+          className="clear-button"
+          onClick={() => {
+            clearCanvas();
+            location.reload();
+          }}
+        >
+          Clear all fields{" "}
+        </div>
       </div>
       <div className="content-container working-area-container">
         <CanvasTool handleClick={handleHexClick} />
