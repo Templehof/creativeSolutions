@@ -1,0 +1,23 @@
+.theory-area-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-top-right-radius: 30%;
+  }
+  
+  .theory-area-content {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .content-text a {
+    color: var(--pink);
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .theory-area-content {
+      width: 60%;
+      height: 60%;
+    }
+  }

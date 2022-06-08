@@ -1,11 +1,11 @@
-.side-menu-container {
+.mobile-menu-container {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 12rem;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
   z-index: 999;
 }
 
-.side-menu-footer-container {
+.mobile-menu-footer-container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -27,24 +27,18 @@
   padding: 2rem;
 }
 
-.side-menu-text-logo {
+.mobile-menu-text-logo {
   font-size: 1rem;
   color: var(--white);
   font-weight: 500;
 }
 
-.side-menu-text-logo span {
+.mobile-menu-text-logo span {
   color: var(--pink);
 }
 
-.side-menu-footer {
+.mobile-menu-footer {
   font-weight: 500;
   color: var(--white);
   margin: 0;
-}
-
-@media screen and (min-width: 1000px) {
-  .side-menu-container {
-    display: flex;
-  }
 }

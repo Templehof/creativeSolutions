@@ -18,7 +18,7 @@ const Cases = () => {
           </div>
           <div className="use-case">
             <h2 className="content-subtitle">
-              Assisting culture and creative incubators
+              Assisting creative incubators
             </h2>
             <p className="content-text">
               Our tool bundle can be effectively used in the day-to-day work of

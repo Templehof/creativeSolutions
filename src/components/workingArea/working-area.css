@@ -49,7 +49,6 @@
   background-color: var(--pink);
 }
 
-
 .working-area-navs {
   position: absolute;
   bottom: 1%;
@@ -65,7 +64,6 @@
   z-index: 999;
 }
 
-
 @media screen and (min-width: 1000px) {
   .working-area-section {
     display: flex;
@@ -76,6 +74,13 @@
   .working-area-container {
     display: flex;
     flex-direction: row;
+    border-top-right-radius: 30%;
   }
+}
 
+@media screen and (max-width: 1400px) {
+  .working-area-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

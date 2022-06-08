@@ -14,10 +14,13 @@ const Intro = () => {
             This web application is created to support culture and creative
             industries incubators and individual entrepreneurs in their journey
             to build a successful creative enterprise. It combines a general{" "}
-            <span>activity planning tool</span> and the{" "}
-            <span>creative canvas</span> model. To learn more about each of the
-            tools, please navigate to <span>Learning Area</span>. To start
-            working with the software, navigate to <span>Working Area</span>.
+            <span>
+              activity planning tool (not yet available in this version){" "}
+            </span>{" "}
+            and the <span>creative canvas</span> model. To learn more about each
+            of the tools, please navigate to <span>Learning Area</span>. To
+            start working with the software, navigate to{" "}
+            <span>Working Area</span>.
           </p>
         </div>
       </div>

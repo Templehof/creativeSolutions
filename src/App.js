@@ -5,21 +5,23 @@ import WorkingArea from "./components/workingArea/WorkingArea";
 import LearningArea from "./components/learningArea/LearningArea";
 import Main from "./components/mainpage/Main";
 import SideMenu from "./components/ui-elements/Side-Menu";
+import MobileMenu from "./components/ui-elements/mobile-menu";
 import PdfCanvas from "./components/workingArea/pdfGenerator/pdfCanvas";
 
 const App = () => {
-  const [isMenuShow, setIsMenuShown] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuShown(!isMenuShow);
-  };
+  const [isMenuShown, setIsMenuShown] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuShown(!isMenuShown);
+  };
 
   return (
     <BrowserRouter>
       <button className="menu-btn" onClick={toggleMenu}>
         Menu
       </button>
-      {isMenuShow && <SideMenu />}
+      <SideMenu />
+      {isMenuShown && <MobileMenu handleClick={toggleMenu} />}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="working" element={<WorkingArea />} />
