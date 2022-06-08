@@ -1,33 +1,53 @@
 .working-area-section {
-    width: 70%;
-    height: 70%;
+  width: 70%;
+  height: 70%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.working-area-container{
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    display: flex;
-    align-items: center;
-    border-top-right-radius: 30%;
+.working-area-container {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 30%;
 }
 
-.save-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: .5rem;
-    background-color: var(--darkBlue);
-    color: var(--white);
-    border: 2px solid var(--pink);
-    cursor: pointer;
-    transition: all .8s ease-in-out;
-    font-weight: 500;
-    text-decoration: none;
+.pdf-area-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: 2px solid var(--pink);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.save-button:hover {
-    background-color: var(--pink);
+.pdf-area-button:hover {
+  background-color: var(--pink);
+}
+
+.clear-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: 2px solid var(--pink);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.clear-button:hover {
+  background-color: var(--pink);
 }

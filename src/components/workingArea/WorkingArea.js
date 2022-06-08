@@ -1,33 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./working-area.css";
+
 import CanvasTool from "./CanvasTool";
 import CanvasForm from "./canvasForm";
-import "./working-area.css";
-import { Link } from "react-router-dom";
-
-const defaultData = {
-  partners: { title: "partners", content: "" },
-  activities: { title: "activities", content: "" },
-  resources: { title: "resources", content: "" },
-  communication: { title: "communication", content: "" },
-  audience: { title: "audience", content: "" },
-  channels: { title: "channels", content: "" },
-  identity: { title: "identity", content: "" },
-  products: { title: "products", content: "" },
-  services: { title: "services", content: "" },
-  "bottom-line": { title: "bottomLine", content: "" },
-};
+import checkStorage from "../utils/storageChecker";
 
 const WorkingArea = () => {
   const [canvasData, setCanvasData] = useState(checkStorage());
   const [formName, setFormName] = useState("partners");
-
-  function checkStorage() {
-    if (JSON.parse(localStorage.getItem("canvas"))) {
-      return JSON.parse(localStorage.getItem("canvas"));
-    } else {
-      return defaultData;
-    }
-  }
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -37,6 +18,11 @@ const WorkingArea = () => {
         [name]: { ...prevData[name], content: e.target.value },
       };
     });
+  };
+
+  const clearCanvas = () => {
+    localStorage.clear();
+    return alert("Canvas content set to default");
   };
 
   const handleHexClick = (e) => {
@@ -51,13 +37,16 @@ const WorkingArea = () => {
   return (
     <section className="page-section working-area-section">
       <Link
-        className="save-button"
+        className="pdf-area-button"
         to="/print"
         target={"_blank"}
         rel="noreferrer noopener"
       >
         Preview
       </Link>
+      <div className="clear-button" onClick={clearCanvas}>
+        Clear all fields{" "}
+      </div>
       <div className="content-container working-area-container">
         <CanvasTool handleClick={handleHexClick} />
         <CanvasForm
