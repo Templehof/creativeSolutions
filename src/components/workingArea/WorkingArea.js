@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./working-area.css";
+import { Fade } from "react-reveal";
 
 import CanvasTool from "./CanvasTool";
 import CanvasForm from "./canvasForm";
@@ -56,12 +57,14 @@ const WorkingArea = () => {
         </div>
       </div>
       <div className="content-container working-area-container">
-        <CanvasTool handleClick={handleHexClick} />
-        <CanvasForm
-          name={formName}
-          currentValue={canvasData[formName].content}
-          handleChange={handleChange}
-        />
+        <Fade bottom>
+          <CanvasTool handleClick={handleHexClick} />
+        </Fade>
+          <CanvasForm
+            name={formName}
+            currentValue={canvasData[formName].content}
+            handleChange={handleChange}
+          />
       </div>
     </section>
   );
