@@ -10,7 +10,7 @@ const Intro = () => {
           <Fade bottom>
             <h1 className="content-title">Culture and Creative industries</h1>
             <h2 className="content-subtitle">
-              Planning and Business Modelling Software
+              Planning and Business Modelling application
             </h2>
             <p className="content-text">
               This web application is created to support culture and creative
